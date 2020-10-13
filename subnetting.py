@@ -3,11 +3,11 @@ import ipaddress
 import random
 
 def ipConvert():
-    octect1 = 10
+    octect1 = random.randint(1, 255)
     octect2 = random.randint(1, 255)
     octect3 = random.randint(1, 255)
     octect4 = random.randint(1, 255)
-    mask = random.randint(1, 32)
+    mask = random.randint(8, 32)
 
     ip = f'{octect1}.{octect2}.{octect3}.{octect4}/{mask}'
     print(f"What are the network address, broadcast address, and the subnet mask for a host with the IP Address:\n {ip}?\n")
